@@ -72,8 +72,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 padding: EdgeInsets.only(top: mq.height * .01),
                                 physics: const BouncingScrollPhysics(),
                                 itemBuilder: (context, index) {
-                                  // return MessageCard(message: _list[index]);
-                                  return Container();
+                                  return MessageCard(message: _list[index]);
                                 });
                           } else {
                             return const Center(
